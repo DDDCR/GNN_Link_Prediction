@@ -34,4 +34,3 @@ class GCNLinkPredictor(torch.nn.Module):
         edge_probs = torch.sigmoid(edge_scores).squeeze(-1)  # Shape: [num_edges]
 
         return edge_probs
-
